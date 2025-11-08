@@ -37,8 +37,14 @@ export const Header = () => {
     <header className="bg-gray-800 text-gray-200 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Логотип */}
-        <Link to="/" className="text-xl font-bold hover:text-gray-300 transition">
-          Q354
+        {/* Логотип */}
+        <Link to="/" className="flex items-center gap-2 hover:text-gray-400 transition">
+          <img
+            src="/logo.png"
+            alt="Q354 Logo"
+            className="h-10 w-auto" // Настрой размер по желанию: h-8 = 32px, h-10 = 40px и т.д.
+          />
+          <span className="text-xl font-bold">Q354</span>
         </Link>
 
         {/* Мобильный гамбургер */}
