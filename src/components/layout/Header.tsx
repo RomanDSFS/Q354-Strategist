@@ -42,7 +42,7 @@ export const Header = () => {
           <img
             src="/logo.png"
             alt="Q354 Logo"
-            className="h-10 w-auto" // Настрой размер по желанию: h-8 = 32px, h-10 = 40px и т.д.
+            className="h-14 w-auto" // Настрой размер по желанию: h-8 = 32px, h-10 = 40px и т.д.
           />
           <span className="text-xl font-bold">Q354</span>
         </Link>
