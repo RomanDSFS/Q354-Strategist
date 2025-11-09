@@ -4,6 +4,7 @@ import { Header } from './components/layout/Header';
 import { Home } from './pages/Home';
 import { Fund } from './pages/Fund';
 import { Studio } from './pages/Studio';
+import { Contacts } from './pages/Contacts';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/fund" element={<Fund />} />
             <Route path="/studio" element={<Studio />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>
       </div>

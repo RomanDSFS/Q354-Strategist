@@ -38,13 +38,13 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Логотип */}
         {/* Логотип */}
-        <Link to="/" className="flex items-center gap-2 hover:text-gray-400 transition">
+        <Link to="/" className="flex items-center gap-1 hover:text-gray-400 transition">
           <img
             src="/logo.png"
             alt="Q354 Logo"
             className="h-14 w-auto" // Настрой размер по желанию: h-8 = 32px, h-10 = 40px и т.д.
           />
-          <span className="text-xl font-bold">Q354</span>
+          <span className="text-xl font-bold">Q354 Strategist</span>
         </Link>
 
         {/* Мобильный гамбургер */}
@@ -59,7 +59,7 @@ export const Header = () => {
         </button>
 
         {/* Десктопное меню */}
-        <nav className="hidden md:flex items-center space-x-1 relative">
+        <nav className="hidden md:flex items-center gap-x-0.6 relative">
           <Link
             to="/fund"
             className="px-3 py-2 text-sm font-medium rounded hover:bg-gray-700 transition"
@@ -162,7 +162,13 @@ export const Header = () => {
               </div>
             )}
           </div>
-
+          <Link
+            to="/contacts"
+            className="px-3 py-2 text-sm font-medium rounded hover:bg-gray-700 transition"
+            onClick={closeMenus}
+          >
+            {t('contacts')}
+          </Link>
           {/* Переключатель языка */}
           <LanguageToggle />
         </nav>
@@ -271,7 +277,13 @@ export const Header = () => {
                   </div>
                 )}
               </div>
-
+              <Link
+                to="/contacts"
+                className="px-3 py-2 text-sm font-medium rounded hover:bg-gray-700 transition"
+                onClick={closeMenus}
+              >
+                {t('contacts')}
+              </Link>
               <div className="border-t border-gray-700 pt-3">
                 <LanguageToggle />
               </div>
